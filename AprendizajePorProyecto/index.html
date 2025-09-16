@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Pagina Web</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-flex">
+        <h1>Nuevos Personajes Honkai: Star Rail</h1>
+        <img src="hsr_logo.png" alt="Logo HSR" width="20%"/>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Servicios</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Personajes nuevos de Amphoreus, version 3.6</h2>
+        <p>
+          En Honkai: Star Rail seguimos en el mundo atrapado en ciclos de
+          tiempo; Amphoreus. En este mundo nos hemos encontrado <br />con nuevos
+          personajes jugables que han generado expectativas entre los jugadores
+          principalmente por su diseño y habilidades. <br />En este caso ya
+          tenemos videos que nos muestran las habilidades de estos personajes.
+        </p>
+      </section>
+
+      <section>
+        <h2>Personajes y habilidades</h2>
+
+        <img
+          src="imagen.webp"
+          alt="March: Evernight"
+          width="800px"
+          height="450px"
+        />
+        <br />
+        <p>
+          March: Evernight es la versión de 5 estrellas de March 7th, un
+          personaje que nos acompaña desde el inicio de nuestra aventura en
+          <br />
+          Honkai: Star Rail. En esta versión, March 7th se presenta como un
+          personaje de tipo hielo, con una vía de la reminiscencia.
+          <br />
+          <br />
+          Se piensa que debido a su principal habilidad de invocar un
+          memosprite, marzo sera un excelente personaje sub dps para el equipo
+          de Castorice.
+        </p>
+        <div class="video-center">
+          <div
+            id="yt-video-container"
+            style="
+              position: relative;
+              width: 800px;
+              height: 450px;
+              cursor: pointer;
+            "
+          >
+            <img
+              src="evernight.jpg"
+              alt="HSR - Promocional Video"
+              style="width: 100%; height: 100%; object-fit: cover"
+              id="yt-thumbnail"
+            />
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="64" height="64" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.5)" />
+                <polygon points="26,20 50,32 26,44" fill="#fff" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <script>
+          document
+            .getElementById("yt-video-container")
+            .addEventListener("click", function () {
+              this.innerHTML =
+                '<iframe width="600" height="202" src="https://www.youtube.com/embed/R4KvM4KpI9k?autoplay=1&rel=0&modestbranding=1" title="HSR - Promocional Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            });
+        </script>
+      </section>
+
+      <section class="contacto-caja">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Nuestra Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.5298454756216!2d-75.1195013261811!3d9.721107177773955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e58d04f1948bcc5%3A0x9ba5a9ed187c80bf!2sUniversidad%20de%20Cartagena%20-%20Centro%20Tutorial%20El%20Carmen%20de%20Bol%C3%ADvar!5e0!3m2!1ses!2sco!4v1757985296845!5m2!1ses!2sco"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>
